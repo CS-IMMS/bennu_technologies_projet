@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
+import { ChevronRight, Dot, Edit } from "lucide-react";
 import Image from "next/image";
-import twitterIcon from "../../../public/icons/wi-cloud.svg";
-
-interface Props {}
+interface Props { }
 
 const Page: React.FC<Props> = (props) => {
   return (
@@ -11,31 +10,54 @@ const Page: React.FC<Props> = (props) => {
         <div className=" rounded-lg p-6 w-full ">
           <div className="text-center mb-6">
             <h2>Weather Forecast</h2>
-            <div className="flex justify-center">
-             <div>
-             <Image priority src='/icons/wi-cloud.svg' width={50} height={50} alt="tktk" />
-             </div>
-             <div>
-             <h2 className="text-lg font-medium mb-1">Today</h2>
-             <p className="text-sm">Sat, 3 Aug</p>
-             </div>
+            <div className="flex justify-center py-3">
+              <div>
+                <Image priority src='/icons/wi-cloud.svg' width={50} height={50} alt="tktk" />
+              </div>
+              <div className="ml-1">
+                <h2 className="text-xl  ">Today</h2>
+                <p className="text-sm ml-2">Sat, 3 Aug</p>
+              </div>
             </div>
             <p className="text-6xl font-bold my-2">28°C</p>
-            <p className="text-sm">
-              Barcelona, Spain
-            </p>
-            <p className="text-xs mt-4">Feels like 32 · Sunset: 20:15</p>
+            <div className="flex justify-center">
+              <div>
+                <p className="text-sm">
+                  Barcelona, Spain
+                </p>
+              </div>
+              <div className="ml-1">
+                <Edit width={12} />
+              </div>
+            </div>
+            <div className="text-xs mt-4 flex justify-center">
+              <p>Feels like 32</p>
+              <Dot className="px-1" />
+              <p>Sunset: 20:15</p>
+            </div>
+            <p className="text-xs mt-4">   </p>
           </div>
           <div className="flex justify-between text-xs font-medium mb-6">
-            {/* Buttons */}
+            <Button variant="link">Today</Button>
+            <Button variant="link">Tomorrow</Button>
+            <Button variant="link">Next 7 Days <ChevronRight /> </Button>
           </div>
           <div className="flex justify-between text-xs mb-6">
-            <div className="text-center">
-              {/* Icons */}
+            <div className="text-center rounded-full hover:bg-white hover:text-black border border-white py-5 px-3 cursor-pointer">
               <p>12AM</p>
+              <Image priority src='/icons/wi-cloud.svg' width={50} height={50} alt="tktk" />
               <p>26°C</p>
             </div>
-            {/* Autres colonnes */}
+            <div className="text-center rounded-full hover:bg-white hover:text-black border border-white py-5 px-3 cursor-pointer">
+              <p>12AM</p>
+              <Image priority src='/icons/wi-cloud.svg' width={50} height={50} alt="tktk" />
+              <p>26°C</p>
+            </div>
+            <div className="text-center rounded-full hover:bg-white hover:text-black border border-white py-5 px-3 cursor-pointer">
+              <p>12AM</p>
+              <Image priority src='/icons/wi-cloud.svg' width={50} height={50} alt="tktk" />
+              <p>26°C</p>
+            </div>
           </div>
           <div>
             <h3 className="text-xs font-medium mb-2">Chance of rain</h3>
