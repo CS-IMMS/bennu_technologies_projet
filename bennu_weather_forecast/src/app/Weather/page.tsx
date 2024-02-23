@@ -5,7 +5,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import SingleProgess from "./components/icons/singleProgess";
 import { Geolocation } from "./interface/weather.interface";
+import * as SunCalc from 'suncalc';
 interface Props { }
+interface SunriseAndSunsetTimeInterface {
+  sunrise: string;
+  sunset: string;
+ }
 
 const Page: React.FC<Props> = (props) => {
   const apiUrl: string | undefined = process.env.NEXT_PUBLIC_API_URL;
@@ -13,6 +18,9 @@ const Page: React.FC<Props> = (props) => {
   const [weatherData, setWeatherData] = useState<any>();
   const [currentGeolocation, setCurrentGeolocation] = useState<Geolocation>({ latitude: '', longitude: '' });
   const [temperaturePerHour, setTemperaturePerHour] = useState<any[]>([]);
+  const [currentTemperature, setCurrentTemperature] = useState<number>();
+  const [currentDate, setCurrentDate] = useState<string>();
+  const [sunriseAndSunsetTime, setSunriseAndSunsetTime] = useState<SunriseAndSunsetTimeInterface | null>(null);
   const [localization, setLocalization] = useState<string>('');
 
   useEffect(() => {
@@ -27,10 +35,19 @@ const Page: React.FC<Props> = (props) => {
   const getWeather = async () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(async (position) => {
-        const corr = {
+        const corr:Geolocation = {
           latitude: String(position.coords.latitude),
           longitude: String(position.coords.longitude),
         };
+        getSunriseAndSunsetTime(corr)
+        // setCurrentGeolocation((prevState) => ({
+        //   ...prevState,
+        //   latitude: String(position.coords.latitude),
+        //   longitude: String(position.coords.longitude),
+        // }));
+        // console.log(corr);
+        
+        
         const location = await reverseGeocode(corr.latitude, corr.longitude);
         setLocalization(location)
 
@@ -45,10 +62,10 @@ const Page: React.FC<Props> = (props) => {
                   if (data && data.data && data.data.timelines && data.data.timelines.length > 0) {
                     const currentTimeline = data.data.timelines[0];
                     const currentInterval = currentTimeline.intervals[0];
-                    const currentTemperature = currentInterval.values.temperature + '°c';
-                    const currentTime = new Date(currentInterval.startTime).toLocaleString();
+                    const currentTemperature:string = currentInterval.values.temperature;
+                    const temperatureInteger: number = parseInt(currentTemperature)
+                    setCurrentTemperature(temperatureInteger)
                     console.log("Température actuelle :", currentTemperature);
-                    console.log("Date/Heure actuelle :", currentTime);
                 }
             } else {
               console.error(
@@ -99,8 +116,30 @@ const Page: React.FC<Props> = (props) => {
         console.error("Erreur lors de la récupération des données de géocodage inversé :", error);
         return null;
     }
-};
+  };
+  const getSunriseAndSunsetTime = async(corr: Geolocation) => {
+    const now = new Date();
+    const currentDate = formatDate(now)
+    setCurrentDate(currentDate)
+    console.log('currentGeolocation: ', corr);
+      const times = SunCalc.getTimes(now, Number(corr.latitude), Number(corr.longitude));
+      setSunriseAndSunsetTime({
+        sunrise: formatTime(times.sunrise),
+        sunset:  formatTime(times.sunset)
+      });
+     ;
 
+    console.log(`Sunset time: ${String(times.sunset)}`);
+  }
+  const formatTime = (date: Date): string => {
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`;
+  };
+  const formatDate = (date: Date): string => {
+  const options: Intl.DateTimeFormatOptions = { weekday: 'short', day: 'numeric', month: 'short' };
+  return date.toLocaleDateString('en-US', options);
+};
 return (
   <>
     <div className="container bg-swatch5 max-w-[375px] max-h-[812px] mx-auto">
@@ -113,11 +152,11 @@ return (
             </div>
             <div className="ml-1">
               <h2 className="text-xl">Today</h2>
-              <p className="text-sm">Sat, 3 Aug</p>
+              <p className="text-sm">{currentDate}</p>
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <p className="text-6xl font-bold py-2">{weatherData && weatherData.temperature}</p>
+            <p className="text-6xl font-bold py-2">{currentTemperature}</p>
             <Image className="mb-4" priority src='/icons/wi-celsius.svg' width={50} height={50} alt="Temperature Icon" />
           </div>
           <div className="flex items-center justify-center">
@@ -129,7 +168,7 @@ return (
           <div className="text-xs mt-4 flex justify-center">
             <p>Feels like 32</p>
             <span className="px-1"><Dot /></span>
-            <p>Sunset: 20:15</p>
+            <p>Sunset: {sunriseAndSunsetTime && sunriseAndSunsetTime.sunset}</p>
           </div>
         </div>
         <div className="flex justify-between text-xs font-medium mb-6">
