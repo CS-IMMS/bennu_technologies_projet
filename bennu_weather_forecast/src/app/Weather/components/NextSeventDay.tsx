@@ -33,10 +33,12 @@ export default function NextSevenDay(props: Props) {
                     <h2 className="text-2xl pt-5 ml-5">Next <span className=" font-semibold"> 7 days</span> </h2>
                 </div>
                 <div className="mt-4  p-4">
-                    <div className=" bg-swatch1 pt-5 pb-5 pl-5 pr-5   rounded-lg shadow-xl">
+                    <div className={`${isNight ? 'bg-swatch1 text-black': 'bg-black text-swatch1 '} pt-5 pb-5 pl-5 pr-5   rounded-lg shadow-xl`}>
                         <div className={`flex items-center justify-between mb-4 ${isNight ? 'text-black' : 'text-swatch1'}`}>
                             <h3 className={`text-lg font-semibold ${isNight ? 'text-black' : 'text-swatch1'} `}>{forecastOfTheWeek && forecastOfTheWeek[0].day} </h3>
+                            <div className={`rounded-full ${isNight ? 'bg-swatch3': 'bg-swatch4'}`}>
                             <Image priority src={getCurrDayIcon} className="  text-swatch5" width={30} height={30} alt="Weather Icon" />
+                            </div>
                             <div className="flex">
                                 <p className="text-xl font-bold">{forecastOfTheWeek && forecastOfTheWeek[0].maxTemperature}°C</p>
                                 <p className="text-gray-500 ml-1 pt-2">{forecastOfTheWeek && forecastOfTheWeek[0].minTemperature}°c</p>

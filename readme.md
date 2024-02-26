@@ -1,36 +1,43 @@
-# Bennu Weather App
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Design and implement a functional weather web application that precisely aligns with the attached user interface specifications.
+## Getting Started
+# install dependencis
+```bash
+npm i
+```
+# Go to
+```bash
+cd bennu_weather_forecast
+```
+# run the development server:
 
-![Bennu Forecast](bennuForecast.webp)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-**Design**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- The app is **NOT** responsive and it must match the iPhone X UI design above.
-  _(Dimensions: 1125px x 2436px (375pt x 812pt @3x))._
-- The app only supports portrait mode.
-- Use Google the following [google font](https://fonts.google.com/specimen/Poiret+One)
-- Use this [color theme](https://aco-viewer.appspot.com/7f9aa74b162cd526c376665961e4bc29) or a color picker for the missing colors
-- Use [Weather icons](https://erikflowers.github.io/weather-icons/)
-- Use [Bootstrap Icons](https://erikflowers.github.io/weather-icons/) for all other icons
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-**Functionality**
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-- The app menu is not functional but it must be represented in the UI.
-- When the app starts it displays the user's location current weather.
-- The Dark Mode functionality is configured to automatically adjust based on the user's local sunset and sunrise times.
-- Today's and Tomorrow's weather are visible on the same page.
-- Next 7 days weather is visible on another page.
+## Learn More
 
-**Technical**
+To learn more about Next.js, take a look at the following resources:
 
-- Build the app using Angular. If you want to use another UI framework, please contact us for an authorization.
-- Use [Tomorrow.io](https://docs.tomorrow.io/reference/welcome) developer api to obtain the weather data
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-**Submissions**
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-- Your submission will initially be assessed by a non-technical reviewer. To facilitate this process, please include a comprehensible README file that outlines the necessary steps to run your application.
+## Deploy on Vercel
 
-- Please upload your solution to your personal Git account and forward the repository URL to careers@bennu.tech. Kindly ensure that your Curriculum Vitae (CV) is included in the email.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Every question is important, so please do not hesitate to inquire. We will swiftly respond to all queries sent to our email, `careers@bennu.tech`, using the subject line `Bennu Weather App Question`.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

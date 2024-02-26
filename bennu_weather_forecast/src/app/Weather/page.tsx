@@ -48,7 +48,7 @@ const Page: React.FC<Props> = (props) => {
 
 
   useEffect(() => {
-    SetIsLoading(true)
+    // SetIsLoading(true)
     getWeather();
   }, []);
 
@@ -57,7 +57,6 @@ const Page: React.FC<Props> = (props) => {
       extractTemperaturePerHour(weatherData);
     }
   }, [weatherData]);
-  const [jsonData, setJsonData] = useState(null);
 
   // useEffect(() => {
   //   const fetchData = async () => {
