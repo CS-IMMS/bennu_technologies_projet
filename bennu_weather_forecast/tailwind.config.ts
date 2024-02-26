@@ -21,12 +21,14 @@ const config = {
       transparent: 'transparent',
       current: 'currentColor',
       'generale-bg': '#3879e0',
-      'black': '#03030e',
-      'swatch3': '#e4f5fd',
+      'black': '#10103A',
+      'swatch3': '#e2f2fd',
+      'swatch1': '#ffff', 
       'swatch4': '#2a60b8',
       'swatch5': '#aac2df',
       'swatch6': '#3c405c',
       'swatch7': '#986580',
+      'swatch8': '#f7c411',
     },
     extend: {
       colors: {

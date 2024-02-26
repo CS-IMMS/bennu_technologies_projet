@@ -1,0 +1,1578 @@
+{
+    "data": {
+        "timelines": [
+            {
+                "timestep": "1h",
+                "endTime": "2024-03-02T08:00:00Z",
+                "startTime": "2024-02-26T08:00:00Z",
+                "intervals": [
+                    {
+                        "startTime": "2024-02-26T08:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 13,
+                            "precipitationIntensity": 0,
+                            "temperature": 26.63,
+                            "uvIndex": 2,
+                            "visibility": 11.29,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.69
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T09:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 10.03,
+                            "precipitationIntensity": 0,
+                            "temperature": 29.89,
+                            "uvIndex": 4,
+                            "visibility": 11.3,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.02
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T10:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 7.67,
+                            "precipitationIntensity": 0,
+                            "temperature": 33.21,
+                            "uvIndex": 8,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.83
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T11:00:00Z",
+                        "values": {
+                            "cloudCover": 19.53,
+                            "humidity": 5.77,
+                            "precipitationIntensity": 0,
+                            "temperature": 36.19,
+                            "uvIndex": 11,
+                            "visibility": 11.33,
+                            "weatherCode": 1100,
+                            "windSpeed": 4.75
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T12:00:00Z",
+                        "values": {
+                            "cloudCover": 29.69,
+                            "humidity": 5.49,
+                            "precipitationIntensity": 0,
+                            "temperature": 37.79,
+                            "uvIndex": 12,
+                            "visibility": 11.31,
+                            "weatherCode": 1100,
+                            "windSpeed": 4.83
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T13:00:00Z",
+                        "values": {
+                            "cloudCover": 72.66,
+                            "humidity": 5.29,
+                            "precipitationIntensity": 0,
+                            "temperature": 38.67,
+                            "uvIndex": 11,
+                            "visibility": 11.3,
+                            "weatherCode": 1102,
+                            "windSpeed": 4.21
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T14:00:00Z",
+                        "values": {
+                            "cloudCover": 92.19,
+                            "humidity": 5.73,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.01,
+                            "uvIndex": 8,
+                            "visibility": 11.3,
+                            "weatherCode": 1001,
+                            "windSpeed": 3.75
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T15:00:00Z",
+                        "values": {
+                            "cloudCover": 72.66,
+                            "humidity": 6.24,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.05,
+                            "uvIndex": 4,
+                            "visibility": 11.29,
+                            "weatherCode": 1102,
+                            "windSpeed": 3.35
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T16:00:00Z",
+                        "values": {
+                            "cloudCover": 56.25,
+                            "humidity": 6.41,
+                            "precipitationIntensity": 0,
+                            "temperature": 38.73,
+                            "uvIndex": 1,
+                            "visibility": 11.29,
+                            "weatherCode": 1101,
+                            "windSpeed": 3.12
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T17:00:00Z",
+                        "values": {
+                            "cloudCover": 61.72,
+                            "humidity": 6.49,
+                            "precipitationIntensity": 0,
+                            "temperature": 37.91,
+                            "uvIndex": 0,
+                            "visibility": 11.29,
+                            "weatherCode": 1101,
+                            "windSpeed": 3.17
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T18:00:00Z",
+                        "values": {
+                            "cloudCover": 33.59,
+                            "humidity": 7.03,
+                            "precipitationIntensity": 0,
+                            "temperature": 34.69,
+                            "uvIndex": 0,
+                            "visibility": 11.3,
+                            "weatherCode": 1100,
+                            "windSpeed": 2.27
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T19:00:00Z",
+                        "values": {
+                            "cloudCover": 14.84,
+                            "humidity": 6.75,
+                            "precipitationIntensity": 0,
+                            "temperature": 32.96,
+                            "uvIndex": 0,
+                            "visibility": 11.31,
+                            "weatherCode": 1100,
+                            "windSpeed": 2.8
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T20:00:00Z",
+                        "values": {
+                            "cloudCover": 5.47,
+                            "humidity": 6.89,
+                            "precipitationIntensity": 0,
+                            "temperature": 31.34,
+                            "uvIndex": 0,
+                            "visibility": 11.32,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.03
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T21:00:00Z",
+                        "values": {
+                            "cloudCover": 5.47,
+                            "humidity": 7.57,
+                            "precipitationIntensity": 0,
+                            "temperature": 29.93,
+                            "uvIndex": 0,
+                            "visibility": 11.33,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.99
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T22:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 8.68,
+                            "precipitationIntensity": 0,
+                            "temperature": 28.27,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.47
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-26T23:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 10.03,
+                            "precipitationIntensity": 0,
+                            "temperature": 26.44,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.47
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T00:00:00Z",
+                        "values": {
+                            "cloudCover": 0.78,
+                            "humidity": 11.27,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.18,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.67
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T01:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 12.47,
+                            "precipitationIntensity": 0,
+                            "temperature": 23.98,
+                            "uvIndex": 0,
+                            "visibility": 11.3,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.91
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T02:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 13.71,
+                            "precipitationIntensity": 0,
+                            "temperature": 23.13,
+                            "uvIndex": 0,
+                            "visibility": 11.29,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.89
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T03:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 14.36,
+                            "precipitationIntensity": 0,
+                            "temperature": 22.41,
+                            "uvIndex": 0,
+                            "visibility": 11.29,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.29
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T04:00:00Z",
+                        "values": {
+                            "cloudCover": 4.69,
+                            "humidity": 14.83,
+                            "precipitationIntensity": 0,
+                            "temperature": 22.11,
+                            "uvIndex": 0,
+                            "visibility": 11.29,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.99
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T05:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 14.29,
+                            "precipitationIntensity": 0,
+                            "temperature": 22.16,
+                            "uvIndex": 0,
+                            "visibility": 11.3,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.73
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T06:00:00Z",
+                        "values": {
+                            "cloudCover": 3.13,
+                            "humidity": 15.26,
+                            "precipitationIntensity": 0,
+                            "temperature": 20.86,
+                            "uvIndex": 0,
+                            "visibility": 11.31,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.12
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T07:00:00Z",
+                        "values": {
+                            "cloudCover": 1.56,
+                            "humidity": 14.19,
+                            "precipitationIntensity": 0,
+                            "temperature": 22.53,
+                            "uvIndex": 0,
+                            "visibility": 11.32,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.04
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T08:00:00Z",
+                        "values": {
+                            "cloudCover": 10.94,
+                            "humidity": 9.8,
+                            "precipitationIntensity": 0,
+                            "temperature": 26.34,
+                            "uvIndex": 1,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.38
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T09:00:00Z",
+                        "values": {
+                            "cloudCover": 17.97,
+                            "humidity": 7.02,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.02,
+                            "uvIndex": 4,
+                            "visibility": 11.37,
+                            "weatherCode": 1100,
+                            "windSpeed": 2.61
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T10:00:00Z",
+                        "values": {
+                            "cloudCover": 0.78,
+                            "humidity": 5.65,
+                            "precipitationIntensity": 0,
+                            "temperature": 33.61,
+                            "uvIndex": 7,
+                            "visibility": 11.38,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.39
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T11:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 4.72,
+                            "precipitationIntensity": 0,
+                            "temperature": 36.66,
+                            "uvIndex": 10,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 4.26
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T12:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 4.21,
+                            "precipitationIntensity": 0,
+                            "temperature": 38.41,
+                            "uvIndex": 11,
+                            "visibility": 11.36,
+                            "weatherCode": 1000,
+                            "windSpeed": 4.28
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T13:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 4.42,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.27,
+                            "uvIndex": 10,
+                            "visibility": 11.35,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.47
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T14:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 4.87,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.59,
+                            "uvIndex": 7,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.59
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T15:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.26,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.61,
+                            "uvIndex": 4,
+                            "visibility": 11.33,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.09
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T16:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.55,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.33,
+                            "uvIndex": 1,
+                            "visibility": 11.33,
+                            "weatherCode": 1000,
+                            "windSpeed": 1.96
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T17:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.9,
+                            "precipitationIntensity": 0,
+                            "temperature": 38.62,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.11
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T18:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 7.66,
+                            "precipitationIntensity": 0,
+                            "temperature": 34.41,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.54
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T19:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 8.56,
+                            "precipitationIntensity": 0,
+                            "temperature": 32.69,
+                            "uvIndex": 0,
+                            "visibility": 11.35,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.74
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T20:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 9.62,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.73,
+                            "uvIndex": 0,
+                            "visibility": 11.36,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.04
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T21:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 10.43,
+                            "precipitationIntensity": 0,
+                            "temperature": 29.16,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.04
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T22:00:00Z",
+                        "values": {
+                            "cloudCover": 1.56,
+                            "humidity": 11.41,
+                            "precipitationIntensity": 0,
+                            "temperature": 27.52,
+                            "uvIndex": 0,
+                            "visibility": 11.38,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.14
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-27T23:00:00Z",
+                        "values": {
+                            "cloudCover": 5.47,
+                            "humidity": 12.33,
+                            "precipitationIntensity": 0,
+                            "temperature": 26.34,
+                            "uvIndex": 0,
+                            "visibility": 11.35,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.09
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T00:00:00Z",
+                        "values": {
+                            "cloudCover": 0.78,
+                            "humidity": 12.94,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.46,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.31
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T01:00:00Z",
+                        "values": {
+                            "cloudCover": 1.56,
+                            "humidity": 13.78,
+                            "precipitationIntensity": 0,
+                            "temperature": 24.32,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.35
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T02:00:00Z",
+                        "values": {
+                            "cloudCover": 1.56,
+                            "humidity": 14.86,
+                            "precipitationIntensity": 0,
+                            "temperature": 23.56,
+                            "uvIndex": 0,
+                            "visibility": 11.33,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.31
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T03:00:00Z",
+                        "values": {
+                            "cloudCover": 3.13,
+                            "humidity": 15.54,
+                            "precipitationIntensity": 0,
+                            "temperature": 23.05,
+                            "uvIndex": 0,
+                            "visibility": 11.33,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.33
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T04:00:00Z",
+                        "values": {
+                            "cloudCover": 10.16,
+                            "humidity": 15.67,
+                            "precipitationIntensity": 0,
+                            "temperature": 22.74,
+                            "uvIndex": 0,
+                            "visibility": 11.33,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.46
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T05:00:00Z",
+                        "values": {
+                            "cloudCover": 8.59,
+                            "humidity": 14.37,
+                            "precipitationIntensity": 0,
+                            "temperature": 23.92,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.94
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T06:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 13.3,
+                            "precipitationIntensity": 0,
+                            "temperature": 24.87,
+                            "uvIndex": 0,
+                            "visibility": 11.34,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.44
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T07:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 13.4,
+                            "precipitationIntensity": 0,
+                            "temperature": 24.61,
+                            "uvIndex": 0,
+                            "visibility": 11.35,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.09
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T08:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 10.71,
+                            "precipitationIntensity": 0,
+                            "temperature": 28.02,
+                            "uvIndex": 1,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.13
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T09:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 8.04,
+                            "precipitationIntensity": 0,
+                            "temperature": 31.99,
+                            "uvIndex": 4,
+                            "visibility": 11.41,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.21
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T10:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 6.25,
+                            "precipitationIntensity": 0,
+                            "temperature": 35.96,
+                            "uvIndex": 7,
+                            "visibility": 11.41,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.62
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T11:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.41,
+                            "precipitationIntensity": 0,
+                            "temperature": 38.9,
+                            "uvIndex": 9,
+                            "visibility": 11.4,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.01
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T12:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.58,
+                            "precipitationIntensity": 0,
+                            "temperature": 40.11,
+                            "uvIndex": 10,
+                            "visibility": 11.39,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.12
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T13:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.62,
+                            "precipitationIntensity": 0,
+                            "temperature": 40.76,
+                            "uvIndex": 9,
+                            "visibility": 11.38,
+                            "weatherCode": 1000,
+                            "windSpeed": 1.17
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T14:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.74,
+                            "precipitationIntensity": 0,
+                            "temperature": 41.14,
+                            "uvIndex": 7,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 1.38
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T15:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 5.87,
+                            "precipitationIntensity": 0,
+                            "temperature": 41.23,
+                            "uvIndex": 3,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.25
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T16:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 6.13,
+                            "precipitationIntensity": 0,
+                            "temperature": 40.81,
+                            "uvIndex": 1,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.88
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T17:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 6.35,
+                            "precipitationIntensity": 0,
+                            "temperature": 40.11,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.27
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T18:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 7.44,
+                            "precipitationIntensity": 0,
+                            "temperature": 37.59,
+                            "uvIndex": 0,
+                            "visibility": 11.38,
+                            "weatherCode": 1000,
+                            "windSpeed": 1.7
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T19:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 9.45,
+                            "precipitationIntensity": 0,
+                            "temperature": 34.12,
+                            "uvIndex": 0,
+                            "visibility": 11.39,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.83
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T20:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 10.85,
+                            "precipitationIntensity": 0,
+                            "temperature": 32.96,
+                            "uvIndex": 0,
+                            "visibility": 11.4,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.81
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T21:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 12.54,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.57,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.93
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T22:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 13.13,
+                            "precipitationIntensity": 0,
+                            "temperature": 29.94,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.38
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-28T23:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 13.64,
+                            "precipitationIntensity": 0,
+                            "temperature": 29.1,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.74
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T00:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 14.33,
+                            "precipitationIntensity": 0,
+                            "temperature": 28.42,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.76
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T01:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 15.72,
+                            "precipitationIntensity": 0,
+                            "temperature": 27.31,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.61
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T02:00:00Z",
+                        "values": {
+                            "cloudCover": 17.97,
+                            "humidity": 17.52,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.86,
+                            "uvIndex": 0,
+                            "visibility": 11.36,
+                            "weatherCode": 1100,
+                            "windSpeed": 3.04
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T03:00:00Z",
+                        "values": {
+                            "cloudCover": 22.66,
+                            "humidity": 17.98,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.83,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1100,
+                            "windSpeed": 2.71
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T04:00:00Z",
+                        "values": {
+                            "cloudCover": 17.19,
+                            "humidity": 17.54,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.61,
+                            "uvIndex": 0,
+                            "visibility": 11.37,
+                            "weatherCode": 1100,
+                            "windSpeed": 3.12
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T05:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 16.08,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.51,
+                            "uvIndex": 0,
+                            "visibility": 11.38,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.62
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T06:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 15.52,
+                            "precipitationIntensity": 0,
+                            "temperature": 24.43,
+                            "uvIndex": 0,
+                            "visibility": 11.39,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.04
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T07:00:00Z",
+                        "values": {
+                            "cloudCover": 0,
+                            "humidity": 13.85,
+                            "precipitationIntensity": 0,
+                            "temperature": 24.98,
+                            "uvIndex": 0,
+                            "visibility": 11.41,
+                            "weatherCode": 1000,
+                            "windSpeed": 2.64
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T08:00:00Z",
+                        "values": {
+                            "cloudCover": 0.05,
+                            "humidity": 10.31,
+                            "precipitationIntensity": 0,
+                            "temperature": 27.91,
+                            "uvIndex": 1,
+                            "visibility": 12.48,
+                            "weatherCode": 1000,
+                            "windSpeed": 3.12
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T09:00:00Z",
+                        "values": {
+                            "cloudCover": 0.42,
+                            "humidity": 8.38,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.89,
+                            "uvIndex": 4,
+                            "visibility": 13.57,
+                            "weatherCode": 1000,
+                            "windSpeed": 4.66
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T10:00:00Z",
+                        "values": {
+                            "cloudCover": 1.31,
+                            "humidity": 7.19,
+                            "precipitationIntensity": 0,
+                            "temperature": 33.73,
+                            "uvIndex": 7,
+                            "visibility": 14.63,
+                            "weatherCode": 1000,
+                            "windSpeed": 5.28
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T11:00:00Z",
+                        "values": {
+                            "cloudCover": 2.28,
+                            "humidity": 6.24,
+                            "precipitationIntensity": 0,
+                            "temperature": 36.38,
+                            "uvIndex": 9,
+                            "visibility": 15.68,
+                            "weatherCode": 1000,
+                            "windSpeed": 5.59
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T12:00:00Z",
+                        "values": {
+                            "cloudCover": 2.79,
+                            "humidity": 5.79,
+                            "precipitationIntensity": 0,
+                            "temperature": 38.12,
+                            "uvIndex": 10,
+                            "visibility": 16.73,
+                            "weatherCode": 1000,
+                            "windSpeed": 4.76
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T13:00:00Z",
+                        "values": {
+                            "cloudCover": 50,
+                            "humidity": 5.77,
+                            "precipitationIntensity": 0,
+                            "temperature": 38.98,
+                            "uvIndex": 9,
+                            "visibility": 17.78,
+                            "weatherCode": 1101,
+                            "windSpeed": 3.79
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T14:00:00Z",
+                        "values": {
+                            "cloudCover": 58.33,
+                            "humidity": 5.91,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.5,
+                            "uvIndex": 6,
+                            "visibility": 18.84,
+                            "weatherCode": 1101,
+                            "windSpeed": 3.41
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T15:00:00Z",
+                        "values": {
+                            "cloudCover": 66.67,
+                            "humidity": 6.16,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.74,
+                            "uvIndex": 3,
+                            "visibility": 19.9,
+                            "weatherCode": 1102,
+                            "windSpeed": 3.22
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T16:00:00Z",
+                        "values": {
+                            "cloudCover": 75,
+                            "humidity": 6.38,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.7,
+                            "uvIndex": 1,
+                            "visibility": 20.96,
+                            "weatherCode": 1001,
+                            "windSpeed": 3.55
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T17:00:00Z",
+                        "values": {
+                            "cloudCover": 81.61,
+                            "humidity": 6.67,
+                            "precipitationIntensity": 0,
+                            "temperature": 39.08,
+                            "uvIndex": 0,
+                            "visibility": 22.02,
+                            "weatherCode": 1001,
+                            "windSpeed": 4.49
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T18:00:00Z",
+                        "values": {
+                            "cloudCover": 75.89,
+                            "humidity": 7.85,
+                            "precipitationIntensity": 0,
+                            "temperature": 36.21,
+                            "uvIndex": 0,
+                            "visibility": 23.08,
+                            "weatherCode": 1001,
+                            "windSpeed": 5.18
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T19:00:00Z",
+                        "values": {
+                            "cloudCover": 94.47,
+                            "humidity": 8.76,
+                            "precipitationIntensity": 0,
+                            "temperature": 34.21,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 5.98
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T20:00:00Z",
+                        "values": {
+                            "cloudCover": 97.27,
+                            "humidity": 8.91,
+                            "precipitationIntensity": 0,
+                            "temperature": 32.68,
+                            "uvIndex": 0,
+                            "visibility": 24.13,
+                            "weatherCode": 1001,
+                            "windSpeed": 6.6
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T21:00:00Z",
+                        "values": {
+                            "cloudCover": 98.16,
+                            "humidity": 8.51,
+                            "precipitationIntensity": 0,
+                            "temperature": 31.73,
+                            "uvIndex": 0,
+                            "visibility": 24.13,
+                            "weatherCode": 1001,
+                            "windSpeed": 6.98
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T22:00:00Z",
+                        "values": {
+                            "cloudCover": 73.94,
+                            "humidity": 8.46,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.62,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1102,
+                            "windSpeed": 7.27
+                        }
+                    },
+                    {
+                        "startTime": "2024-02-29T23:00:00Z",
+                        "values": {
+                            "cloudCover": 73.7,
+                            "humidity": 8.55,
+                            "precipitationIntensity": 0,
+                            "temperature": 29.21,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1102,
+                            "windSpeed": 6.99
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T00:00:00Z",
+                        "values": {
+                            "cloudCover": 78.08,
+                            "humidity": 8.35,
+                            "precipitationIntensity": 0,
+                            "temperature": 28.43,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 6.79
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T01:00:00Z",
+                        "values": {
+                            "cloudCover": 100,
+                            "humidity": 8.12,
+                            "precipitationIntensity": 0,
+                            "temperature": 27.62,
+                            "uvIndex": 0,
+                            "visibility": 24.13,
+                            "weatherCode": 1001,
+                            "windSpeed": 6.66
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T02:00:00Z",
+                        "values": {
+                            "cloudCover": 100,
+                            "humidity": 7.94,
+                            "precipitationIntensity": 0,
+                            "temperature": 26.67,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 6.19
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T03:00:00Z",
+                        "values": {
+                            "cloudCover": 100,
+                            "humidity": 7.75,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.75,
+                            "uvIndex": 0,
+                            "visibility": 24.13,
+                            "weatherCode": 1001,
+                            "windSpeed": 5.52
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T04:00:00Z",
+                        "values": {
+                            "cloudCover": 81.61,
+                            "humidity": 7.51,
+                            "precipitationIntensity": 0,
+                            "temperature": 25.02,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 5.21
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T05:00:00Z",
+                        "values": {
+                            "cloudCover": 66.35,
+                            "humidity": 7.17,
+                            "precipitationIntensity": 0,
+                            "temperature": 24.41,
+                            "uvIndex": 0,
+                            "visibility": 24.13,
+                            "weatherCode": 1102,
+                            "windSpeed": 5.39
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T06:00:00Z",
+                        "values": {
+                            "cloudCover": 56.15,
+                            "humidity": 6.82,
+                            "precipitationIntensity": 0,
+                            "temperature": 23.8,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1101,
+                            "windSpeed": 5.11
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T07:00:00Z",
+                        "values": {
+                            "cloudCover": 10.66,
+                            "humidity": 6.42,
+                            "precipitationIntensity": 0,
+                            "temperature": 24.16,
+                            "uvIndex": 0,
+                            "visibility": 24.14,
+                            "weatherCode": 1000,
+                            "windSpeed": 5.04
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T08:00:00Z",
+                        "values": {
+                            "cloudCover": 11.04,
+                            "humidity": 5.34,
+                            "precipitationIntensity": 0,
+                            "temperature": 26.4,
+                            "uvIndex": 1,
+                            "visibility": 24.14,
+                            "weatherCode": 1000,
+                            "windSpeed": 5.99
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T09:00:00Z",
+                        "values": {
+                            "cloudCover": 38,
+                            "humidity": 4.77,
+                            "precipitationIntensity": 0,
+                            "temperature": 28.91,
+                            "uvIndex": 3,
+                            "visibility": 24.14,
+                            "weatherCode": 1101,
+                            "windSpeed": 5.77
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T10:00:00Z",
+                        "values": {
+                            "cloudCover": 45.92,
+                            "humidity": 4.57,
+                            "precipitationIntensity": 0,
+                            "temperature": 31.31,
+                            "uvIndex": 6,
+                            "visibility": 24.13,
+                            "weatherCode": 1101,
+                            "windSpeed": 4.68
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T11:00:00Z",
+                        "values": {
+                            "cloudCover": 46.93,
+                            "humidity": 4.51,
+                            "precipitationIntensity": 0,
+                            "temperature": 33.44,
+                            "uvIndex": 8,
+                            "visibility": 24.13,
+                            "weatherCode": 1101,
+                            "windSpeed": 4.21
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T12:00:00Z",
+                        "values": {
+                            "cloudCover": 54.01,
+                            "humidity": 4.54,
+                            "precipitationIntensity": 0,
+                            "temperature": 35.16,
+                            "uvIndex": 9,
+                            "visibility": 24.14,
+                            "weatherCode": 1101,
+                            "windSpeed": 3.98
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T13:00:00Z",
+                        "values": {
+                            "cloudCover": 72.62,
+                            "humidity": 4.61,
+                            "precipitationIntensity": 0,
+                            "temperature": 36.43,
+                            "visibility": 24.14,
+                            "weatherCode": 1102,
+                            "windSpeed": 3.41
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T14:00:00Z",
+                        "values": {
+                            "cloudCover": 76.99,
+                            "humidity": 4.71,
+                            "precipitationIntensity": 0,
+                            "temperature": 37.23,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 2.38
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T15:00:00Z",
+                        "values": {
+                            "cloudCover": 71.62,
+                            "humidity": 4.83,
+                            "precipitationIntensity": 0,
+                            "temperature": 37.71,
+                            "visibility": 24.14,
+                            "weatherCode": 1102,
+                            "windSpeed": 1.84
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T16:00:00Z",
+                        "values": {
+                            "cloudCover": 62.46,
+                            "humidity": 4.97,
+                            "precipitationIntensity": 0,
+                            "temperature": 37.88,
+                            "visibility": 24.14,
+                            "weatherCode": 1102,
+                            "windSpeed": 1.49
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T17:00:00Z",
+                        "values": {
+                            "cloudCover": 53.72,
+                            "humidity": 5.24,
+                            "precipitationIntensity": 0,
+                            "temperature": 37.67,
+                            "visibility": 24.14,
+                            "weatherCode": 1101,
+                            "windSpeed": 2.03
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T18:00:00Z",
+                        "values": {
+                            "cloudCover": 47.53,
+                            "humidity": 6.25,
+                            "precipitationIntensity": 0,
+                            "temperature": 34.54,
+                            "visibility": 24.14,
+                            "weatherCode": 1101,
+                            "windSpeed": 2.59
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T19:00:00Z",
+                        "values": {
+                            "cloudCover": 21.67,
+                            "humidity": 6.63,
+                            "precipitationIntensity": 0,
+                            "temperature": 33.4,
+                            "visibility": 24.13,
+                            "weatherCode": 1100,
+                            "windSpeed": 3.19
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T20:00:00Z",
+                        "values": {
+                            "cloudCover": 21.25,
+                            "humidity": 6.89,
+                            "precipitationIntensity": 0,
+                            "temperature": 32.62,
+                            "visibility": 24.14,
+                            "weatherCode": 1100,
+                            "windSpeed": 3.36
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T21:00:00Z",
+                        "values": {
+                            "cloudCover": 33.57,
+                            "humidity": 7.11,
+                            "precipitationIntensity": 0,
+                            "temperature": 31.96,
+                            "visibility": 24.13,
+                            "weatherCode": 1100,
+                            "windSpeed": 3.21
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T22:00:00Z",
+                        "values": {
+                            "cloudCover": 29.73,
+                            "humidity": 7.32,
+                            "precipitationIntensity": 0,
+                            "temperature": 31.29,
+                            "visibility": 24.14,
+                            "weatherCode": 1100,
+                            "windSpeed": 3.2
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-01T23:00:00Z",
+                        "values": {
+                            "cloudCover": 31.4,
+                            "humidity": 7.42,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.84,
+                            "visibility": 24.14,
+                            "weatherCode": 1100,
+                            "windSpeed": 3.42
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T00:00:00Z",
+                        "values": {
+                            "cloudCover": 41.98,
+                            "humidity": 7.28,
+                            "precipitationIntensity": 0,
+                            "temperature": 31.07,
+                            "visibility": 24.13,
+                            "weatherCode": 1101,
+                            "windSpeed": 3.95
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T01:00:00Z",
+                        "values": {
+                            "cloudCover": 55.73,
+                            "humidity": 7.44,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.82,
+                            "visibility": 24.14,
+                            "weatherCode": 1101,
+                            "windSpeed": 3.85
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T02:00:00Z",
+                        "values": {
+                            "cloudCover": 69.48,
+                            "humidity": 7.6,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.57,
+                            "visibility": 24.14,
+                            "weatherCode": 1102,
+                            "windSpeed": 3.76
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T03:00:00Z",
+                        "values": {
+                            "cloudCover": 83.24,
+                            "humidity": 7.76,
+                            "precipitationIntensity": 0,
+                            "temperature": 30.32,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 3.66
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T04:00:00Z",
+                        "values": {
+                            "cloudCover": 84.76,
+                            "humidity": 8.44,
+                            "precipitationIntensity": 0,
+                            "temperature": 28.97,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 3.33
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T05:00:00Z",
+                        "values": {
+                            "cloudCover": 86.29,
+                            "humidity": 9.13,
+                            "precipitationIntensity": 0,
+                            "temperature": 27.62,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 3
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T06:00:00Z",
+                        "values": {
+                            "cloudCover": 87.82,
+                            "humidity": 9.81,
+                            "precipitationIntensity": 0,
+                            "temperature": 26.27,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 2.67
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T07:00:00Z",
+                        "values": {
+                            "cloudCover": 83.46,
+                            "humidity": 8.52,
+                            "precipitationIntensity": 0,
+                            "temperature": 27.88,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 3.37
+                        }
+                    },
+                    {
+                        "startTime": "2024-03-02T08:00:00Z",
+                        "values": {
+                            "cloudCover": 79.09,
+                            "humidity": 7.24,
+                            "precipitationIntensity": 0,
+                            "temperature": 29.5,
+                            "visibility": 24.14,
+                            "weatherCode": 1001,
+                            "windSpeed": 4.06
+                        }
+                    }
+                ]
+            }
+        ],
+        "warnings": [
+            {
+                "code": 246001,
+                "type": "Time Bounded Field",
+                "message": "The following field is not supported for a time range: 'uvIndex'",
+                "meta": {
+                    "field": "uvIndex",
+                    "from": "2024-02-26T06:30:00Z",
+                    "to": "2024-03-01T20:38:00Z"
+                }
+            }
+        ]
+    }
+}
