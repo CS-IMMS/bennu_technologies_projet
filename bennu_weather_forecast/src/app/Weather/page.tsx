@@ -266,7 +266,7 @@ const Page: React.FC<Props> = (props) => {
 
 
   const getWeather = async () => {
-  SetIsLoading(true)
+    SetIsLoading(true)
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(async (position) => {
         const corr: Geolocation = {
@@ -286,7 +286,7 @@ const Page: React.FC<Props> = (props) => {
                 groupHourlyWeatherData(data.data)
                 setWeatherData(data)
                 getCurrentDayWeatherDetail(data.data)
-                if(weatherData){
+                if (weatherData) {
                   SetIsLoading(false)
                 }
               }
@@ -338,20 +338,20 @@ const Page: React.FC<Props> = (props) => {
     });
     const formatItem = currentHour.split(':')[0];
     const formatSuneTime = sunriseAndSunsetTime?.sunset.split(':')[0]
-    if(Number(formatItem) % 2 === 0){
-      if(Number(formatSuneTime) === Number(formatItem)){
+    if (Number(formatItem) % 2 === 0) {
+      if (Number(formatSuneTime) === Number(formatItem)) {
         SetIsNight(true)
       }
     } else {
-      if(Number(formatSuneTime) === Number(formatItem) + 1){
+      if (Number(formatSuneTime) === Number(formatItem) + 1) {
         SetIsNight(true)
       }
     }
-    console.log('currentDate/////////////////////////',currentHour );
-    
+    // console.log('currentDate/////////////////////////', currentHour);
+
     ;
 
-    console.log(`Sunset time: ${String(times.sunset)}`);
+    // console.log(`Sunset time: ${String(times.sunset)}`);
   }
 
   const extractTemperaturePerHour = (data: any) => {
@@ -390,26 +390,26 @@ const Page: React.FC<Props> = (props) => {
     SetNextSevenDayState(true)
   }
 
-const cuurDayIcon = getWeatherIcon((currentDayWeatherDetail?.values.weatherCode as number))
-  if(nextSevenDayState === false && isLoading){
+  const cuurDayIcon = getWeatherIcon((currentDayWeatherDetail?.values.weatherCode as number))
+  if (nextSevenDayState === false && isLoading) {
     return (
-    <>
-      <div className="flex justify-center items-center h-screen">
-      <div
-        className="border-4 border-black border-solid rounded-full animate-spin"
-        style={{
-          borderTopColor: '#10103A',
-          borderRightColor: '#10103A',
-          borderBottomColor: '#10103A',
-          borderLeftColor: '#fff',
-          width: '50px',
-          height: '50px',
-        }}
-      ></div>
-    </div>
-    </>
-  )
-  
+      <>
+        <div className="flex justify-center items-center h-screen">
+          <div
+            className="border-4 border-black border-solid rounded-full animate-spin"
+            style={{
+              borderTopColor: '#10103A',
+              borderRightColor: '#10103A',
+              borderBottomColor: '#10103A',
+              borderLeftColor: '#fff',
+              width: '50px',
+              height: '50px',
+            }}
+          ></div>
+        </div>
+      </>
+    )
+
   }
   if (!isLoading && nextSevenDayState === false) {
     return (
@@ -424,12 +424,12 @@ const cuurDayIcon = getWeatherIcon((currentDayWeatherDetail?.values.weatherCode 
               <div className=" text-swatch1">
                 <Image priority src={cuurDayIcon} className=" text-swatch1" style={{ color: '#ffff' }} width={50} height={50} alt="Weather Icon" />
               </div>
-              <div className="ml-1">
+              <div className="">
                 <h2 className={`text-xl ${isNight ? 'text-swatch1' : 'text-black'}`}>Today</h2>
                 <p className={` text-sm  ${isNight ? 'text-swatch1' : 'text-black'}`}>{currentDate}</p>
               </div>
             </div>
-            <div className={`flex items-center justify-center ${isNight ? 'text-swatch1' : 'text-black'}`} >
+            <div className={`flex ml-10 items-center justify-center ${isNight ? 'text-swatch1' : 'text-black'}`} >
               <p className="text-5xl font-bold ">{currentDayWeatherDetail && String(currentDayWeatherDetail?.values.temperature).split('.')[0]}</p>
               <p className="pb-7 text-xl">°C</p>
               {/* <Image className= {`mb-4 ${isNight ? 'bg-swatch1' : 'bg-black'}`} priority src='/icons/wi-celsius.svg' width={50} height={50} alt="Temperature Icon" /> */}
@@ -484,7 +484,7 @@ const cuurDayIcon = getWeatherIcon((currentDayWeatherDetail?.values.weatherCode 
   else {
     return (
       <>
-        <div className={`  max-w-[375px] max-h-[812px] ${isNight ? 'bg-black text-swatch1': 'bg-swatch3 text-black'}`}>
+        <div className={`  max-w-[375px] max-h-[812px] ${isNight ? 'bg-black text-swatch1' : 'bg-swatch1 text-black'}`}>
           <NextSevenDay isNight={isNight} SetNextSevenDayState={SetNextSevenDayState} currentDayWeatherDetail={currentDayWeatherDetail} forecastOfTheWeek={forecastOfTheWeek} />
         </div>
       </>
