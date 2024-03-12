@@ -8,8 +8,8 @@ import { DailyWeather, Geolocation, HourlyWeather, HourlyWeatherAverage, Weather
 import * as SunCalc from 'suncalc';
 import TemperatureForHour from "./components/temperatureForHour";
 import NextSevenDay from "./components/NextSeventDay";
-import { useTheme } from "next-themes";
 import { getWeatherIcon } from "../utility/function";
+import MenuIcon from "./components/icons/menu";
 interface Props { }
 interface SunriseAndSunsetTimeInterface {
   sunrise: string;
@@ -18,9 +18,9 @@ interface SunriseAndSunsetTimeInterface {
 interface IntervalData {
   date: Date,
   temperature: number;
-  cloudCover: number; // En supposant une valeur numérique pour la couverture nuageuse
-  precipitationIntensity?: number; // Optionnel pour l'intensité des précipitations
-  weatherCode?: string; // Optionnel pour le code météo
+  cloudCover: number;
+  precipitationIntensity?: number;
+  weatherCode?: string;
 }
 
 interface DailyForecast {
@@ -32,6 +32,7 @@ interface DailyForecast {
 }
 const Page: React.FC<Props> = (props) => {
   const apiUrl: string | undefined = process.env.NEXT_PUBLIC_API_URL;
+  const reverseLocalizationApi: string | undefined = process.env.NEXT_PUBLIC_REVERSE_URL;
   const apiKEY: string | undefined = process.env.NEXT_PUBLIC_API_KEY;
   const [weatherData, setWeatherData] = useState<DailyForecast[]>([]);
   const [currentGeolocation, setCurrentGeolocation] = useState<Geolocation>({ latitude: '', longitude: '' });
@@ -43,7 +44,7 @@ const Page: React.FC<Props> = (props) => {
   const [forecastOfTheWeek, setForecastOfTheWeek] = useState<DailyWeather[] | []>([])
   const [hourlyWeatherAverage, setHourlyWeatherAverage] = useState<HourlyWeatherAverage[] | []>([])
   const [nextSevenDayState, SetNextSevenDayState] = useState<boolean>(false)
-  const [isNight, SetIsNight] = useState<boolean>(false)
+  const [isNight, SetIsNight] = useState<boolean>(false);
   const [isLoading, SetIsLoading] = useState<boolean>(false)
 
 
@@ -145,76 +146,6 @@ const Page: React.FC<Props> = (props) => {
     setForecastOfTheWeek(dailyData)
     return dailyData;
   };
-  // const groupHourlyWeatherData = (data: weatherFetchData): HourlyWeather[] => {
-  //   const allData = data.timelines[0].intervals;
-  //   const hourlyData: HourlyWeather[] = [];
-
-  //   let currentHourData: WeatherData[] = [];
-  //   let currentHourStartTime = '';
-
-  //   for (let i = 0; i < allData.length; i++) {
-  //     const { startTime, values } = allData[i];
-  //     const hour = new Date(startTime).getHours();
-
-  //     if (currentHourStartTime === '') {
-  //       currentHourStartTime = startTime;
-  //     }
-
-  //     if (new Date(startTime).getHours() === hour) {
-  //       currentHourData.push(values);
-  //     } else {
-  //       const averageCloudCover =
-  //         currentHourData.reduce((acc, curr) => acc + curr.cloudCover, 0) / currentHourData.length;
-
-  //       const averagePrecipitationIntensity =
-  //         currentHourData.reduce((acc, curr) => acc + curr.precipitationIntensity, 0) / currentHourData.length;
-
-  //       const averageTemperature =
-  //         currentHourData.reduce((acc, curr) => acc + curr.temperature, 0) / currentHourData.length;
-
-  //       const averageWeatherCode =
-  //         currentHourData.reduce((acc, curr) => acc + curr.weatherCode, 0) / currentHourData.length;
-
-  //       hourlyData.push({
-  //         startTime: currentHourStartTime,
-  //         averageCloudCover: Math.round(averageCloudCover * 100) / 100,
-  //         averagePrecipitationIntensity: Math.round(averagePrecipitationIntensity * 100) / 100,
-  //         averageTemperature: Math.round(averageTemperature * 100) / 100,
-  //         averageWeatherCode: Math.round(averageWeatherCode),
-  //       });
-
-  //       // Réinitialiser les données pour la prochaine heure
-  //       currentHourData = [values];
-  //       currentHourStartTime = startTime;
-  //     }
-  //   }
-
-  //   // Ajouter les données de la dernière heure si elles existent
-  //   if (currentHourData.length > 0) {
-  //     const averageCloudCover =
-  //       currentHourData.reduce((acc, curr) => acc + curr.cloudCover, 0) / currentHourData.length;
-
-  //     const averagePrecipitationIntensity =
-  //       currentHourData.reduce((acc, curr) => acc + curr.precipitationIntensity, 0) / currentHourData.length;
-
-  //     const averageTemperature =
-  //       currentHourData.reduce((acc, curr) => acc + curr.temperature, 0) / currentHourData.length;
-
-  //     const averageWeatherCode =
-  //       currentHourData.reduce((acc, curr) => acc + curr.weatherCode, 0) / currentHourData.length;
-
-  //     hourlyData.push({
-  //       startTime: currentHourStartTime,
-  //       averageCloudCover: Math.round(averageCloudCover * 100) / 100,
-  //       averagePrecipitationIntensity: Math.round(averagePrecipitationIntensity * 100) / 100,
-  //       averageTemperature: Math.round(averageTemperature * 100) / 100,
-  //       averageWeatherCode: Math.round(averageWeatherCode),
-  //     });
-  //   }
-  // console.log("hourlyData:::::", hourlyData);
-
-  //   return hourlyData;
-  // };
   const groupHourlyWeatherData = (data: weatherFetchData): HourlyWeatherAverage[] => {
     const allData = data.timelines[0].intervals;
 
@@ -265,6 +196,7 @@ const Page: React.FC<Props> = (props) => {
   // console.log('forecastOfTheWeek:::::::::::::::', forecastOfTheWeek);
 
 
+
   const getWeather = async () => {
     SetIsLoading(true)
     if (navigator.geolocation) {
@@ -273,7 +205,7 @@ const Page: React.FC<Props> = (props) => {
           latitude: String(position.coords.latitude),
           longitude: String(position.coords.longitude),
         };
-        getSunriseAndSunsetTime(corr)
+
         if (apiUrl && apiKEY) {
           try {
             const response = await fetch(
@@ -284,8 +216,10 @@ const Page: React.FC<Props> = (props) => {
               if (data.data) {
                 getDailyWeatherData(data.data)
                 groupHourlyWeatherData(data.data)
-                setWeatherData(data)
                 getCurrentDayWeatherDetail(data.data)
+                getSunriseAndSunsetTime(corr);
+                getLocalizationInformation(corr);
+                setWeatherData(data);
                 if (weatherData) {
                   SetIsLoading(false)
                 }
@@ -305,6 +239,16 @@ const Page: React.FC<Props> = (props) => {
       console.error('Géolocalisation non supportée');
     }
   };
+  const getLocalizationInformation = async (corr: Geolocation) => {
+    const response = await fetch(
+      `${reverseLocalizationApi}?format=json&lat=${corr.latitude}&lon=${corr.longitude}&addressdetails=1`
+    );
+    if (response.ok) {
+      const data = await response.json();
+      const locationDetail = `${data.address.city}, ${data.address.country}`
+      setLocalization(locationDetail)
+    }
+  }
   const getCurrentDayWeatherDetail = (data: any) => {
     const currentDate = new Date(Date.now());
     const offset = currentDate.getTimezoneOffset() * 60000; // en millisecondes
@@ -320,7 +264,7 @@ const Page: React.FC<Props> = (props) => {
       setCurrentDayWeatherDetail(filteredObject)
     }
 
-    console.log('currentHour::$$$$$$$$$$$$$$$$$$$', filteredObject);
+    // console.log('currentHour::$$$$$$$$$$$$$$$$$$$', filteredObject);
     // for (let i = 0; i < allHourWeather.length; i++) {
     //   const element = allHourWeather[i];
     // }
@@ -330,28 +274,19 @@ const Page: React.FC<Props> = (props) => {
     const currentDate = formatDate(now)
     const currentHour = formatTime(now)
     setCurrentDate(currentDate)
-    console.log('currentGeolocation: ', corr);
+    // console.log('currentGeolocation: ', corr);
     const times = SunCalc.getTimes(now, Number(corr.latitude), Number(corr.longitude));
     setSunriseAndSunsetTime({
       sunrise: formatTime(times.sunrise),
       sunset: formatTime(times.sunset)
     });
     const formatItem = currentHour.split(':')[0];
-    const formatSuneTime = sunriseAndSunsetTime?.sunset.split(':')[0]
-    if (Number(formatItem) % 2 === 0) {
-      if (Number(formatSuneTime) === Number(formatItem)) {
-        SetIsNight(true)
-      }
-    } else {
-      if (Number(formatSuneTime) === Number(formatItem) + 1) {
-        SetIsNight(true)
-      }
+    // console.log("formatItem=====", formatItem);
+    const convertSunsetTime = new Date(times.sunset).getTime();
+    const convertSunriseTime = new Date(times.sunrise).getTime();
+    if (now.getTime() >= convertSunsetTime && now.getTime() <= convertSunriseTime) {
+      SetIsNight(true)
     }
-    // console.log('currentDate/////////////////////////', currentHour);
-
-    ;
-
-    // console.log(`Sunset time: ${String(times.sunset)}`);
   }
 
   const extractTemperaturePerHour = (data: any) => {
@@ -390,7 +325,8 @@ const Page: React.FC<Props> = (props) => {
     SetNextSevenDayState(true)
   }
 
-  const cuurDayIcon = getWeatherIcon((currentDayWeatherDetail?.values.weatherCode as number))
+  // console.log("hourlyWeatherAverage$$$$$$$$$$$$$$$$", hourlyWeatherAverage);
+  const cuurDayIcon = getWeatherIcon((currentDayWeatherDetail?.values.weatherCode as number), isNight)
   if (nextSevenDayState === false && isLoading) {
     return (
       <>
@@ -414,13 +350,14 @@ const Page: React.FC<Props> = (props) => {
   if (!isLoading && nextSevenDayState === false) {
     return (
       <>
-        <div className={`container m-0 p-0 ${isNight ? 'bg-black text-swatch1' : 'bg-swatch1 text-black'}  text-swatch1 max-w-[375px] max-h-[812px]`}>
-          <div className="text-center  w-[100%]">
-            <div className="flex pt-6">
-              <Image priority alt="menu icon" className=" cursor-pointer" src="/icons/menu.svg" width={60} height={60} />
-              <h2 className={`text-xl font-bold ${isNight ? 'text-swatch1' : 'text-black'} `}>Weather Forecast</h2>
+        <div className={`container bg-[url('/icons/wi-cloudDark.svg')] bg-no-repeat  bg-[top_right_15rem]  bg-[length:200px_200px] m-0 p-0 ${isNight ? 'bg-black text-swatch1' : 'bg-swatch1 text-black'}  text-swatch1 max-w-[375px] max-h-[812px]`}>
+          <div className="text-center  w-[100%] bg-[url('/icons/wi-cloudDark.svg')] bg-no-repeat bg-[center_right_-6rem] bg-[length:200px_200px]">
+            <div className="flex max-h-9  pt-5">
+              <MenuIcon color={isNight ? '#ffff' : '#10103A'} />
+              {/* <Image priority alt="menu icon" className=" cursor-pointer" src="/icons/menu.svg" width={60} height={60} /> */}
+              <h2 className={`text-md ml-20 font-bold ${isNight ? 'text-swatch1' : 'text-black'} `}>Weather Forecast</h2>
             </div>
-            <div className="flex items-center justify-center ">
+            <div className="flex pt-14 mr-10 items-center justify-center ">
               <div className=" text-swatch1">
                 <Image priority src={cuurDayIcon} className=" text-swatch1" style={{ color: '#ffff' }} width={50} height={50} alt="Weather Icon" />
               </div>
@@ -429,25 +366,29 @@ const Page: React.FC<Props> = (props) => {
                 <p className={` text-sm  ${isNight ? 'text-swatch1' : 'text-black'}`}>{currentDate}</p>
               </div>
             </div>
-            <div className={`flex ml-10 items-center justify-center ${isNight ? 'text-swatch1' : 'text-black'}`} >
+            <div className={`flex  items-center justify-center ${isNight ? 'text-swatch1' : 'text-black'}`} >
               <p className="text-5xl font-bold ">{currentDayWeatherDetail && String(currentDayWeatherDetail?.values.temperature).split('.')[0]}</p>
               <p className="pb-7 text-xl">°C</p>
               {/* <Image className= {`mb-4 ${isNight ? 'bg-swatch1' : 'bg-black'}`} priority src='/icons/wi-celsius.svg' width={50} height={50} alt="Temperature Icon" /> */}
             </div>
-            <div className="flex items-center justify-center">
-              <p className="text-sm">{localization && localization}</p>
+            <div className={`flex mr-5 items-center justify-center ${isNight ? 'text-swatch1' : 'text-black'}`}>
+              <p className="text-sm">{localization}</p>
               <div className="ml-1">
                 <Edit width={12} />
               </div>
             </div>
-            <div className="text-xs flex justify-center">
+            <div className="text-xs mr-2 flex justify-center">
               <p className={`${isNight ? 'text-swatch1' : 'text-black'}`}>Feels like 32</p>
               <span className={`px-1 ${isNight ? 'text-swatch1' : 'text-black'}`}><Dot /></span>
               <p className={`${isNight ? 'text-swatch1' : 'text-black'}`}>Sunset: {sunriseAndSunsetTime && sunriseAndSunsetTime.sunset}</p>
             </div>
           </div>
-          <div className="flex justify-between  font-medium ">
-            <Button variant="link" className={`text-xl ${isNight ? 'text-swatch1' : 'text-black'}`}>Today</Button>
+          <div className="flex justify-between  font-medium bg-[url('/icons/wi-cloudDark.svg')] bg-no-repeat bg-[right_-1rem] bg-[length:50px_50px]">
+            <div>
+              <Button variant="link" className={`text-xl ${isNight ? 'text-swatch1' : 'text-black'}`}>Today</Button>
+              <Dot color={isNight ? '#ffff' : '#10103A'} className="ml-6 mt-[-14px]" />
+            </div>
+            {/* <Button variant="link" className={`text-xl ${isNight ? 'text-swatch1' : 'text-black'}`}>Today</Button> */}
             <Button variant="link" className={`text-xl ${isNight ? 'text-swatch1' : 'text-black'}`}>Tomorrow</Button>
             <Button variant="link" className={`text-xl ml-[-6] cursor-pointer ${isNight ? 'text-swatch1' : 'text-swatch4'}`} onClick={() => NextStape()}>Next 7 Days <ChevronRight /> </Button>
           </div>
@@ -455,23 +396,18 @@ const Page: React.FC<Props> = (props) => {
             <TemperatureForHour hourlyWeatherAverage={hourlyWeatherAverage} isNight={isNight} />
           </div>
           <div className="pt-5">
-            <h3 className={`text-lg ml-3  font-medium ${isNight ? 'text-swatch1' : 'text-black'}`}>Chance of rain</h3>
-            <div className="flex ">
+            <p className={`text-lg ml-3  font-medium ${isNight ? 'text-swatch1' : 'text-black'}`}>Chance of rain</p>
+            <div className="flex pt-1">
               <div className={`ml-3 mt-0 mb-0 ${isNight ? 'text-swatch1' : 'text-black'}`}>
-                <p className="pt-2">sunny</p>
-                <p className="pt-5">rainy</p>
-                <p className=" pt-5">heavy</p>
+                <p className="pt-5 mt-3">sunny</p>
+                <p className="mt-1">rainy</p>
+                <p className="pt-4">heavy</p>
                 <p>rain</p>
               </div>
               <div className="flex justify-between ml-5">
                 <div className="mt-0 mb-0 pt-4">
-                  <div className="flex pt-5">
-                    <SingleProgess hourlyWeatherAverage={hourlyWeatherAverage} isNight={isNight} size={"75"} time={"10"} />
-                    {/* <SingleProgess size={"90"} time={"12"} />
-                    <SingleProgess size={"60"} time={"2"} />
-                    <SingleProgess size={"60"} time={"4"} />
-                    <SingleProgess size={"70"} time={"6"} />
-                    <SingleProgess size={"60"} time={"8"} /> */}
+                  <div className="flex ">
+                    <SingleProgess hourlyWeatherAverage={hourlyWeatherAverage} isNight={isNight} />
                   </div>
                 </div>
               </div>
