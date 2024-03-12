@@ -1,12 +1,13 @@
 
 ## Getting Started
-# install dependencis
-```bash
-npm i
-```
+
 # Go to
 ```bash
 cd bennu_weather_forecast
+```
+# install dependencis
+```bash
+npm i
 ```
 # run the development server:
 

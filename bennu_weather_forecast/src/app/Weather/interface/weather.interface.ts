@@ -66,4 +66,5 @@ export interface HourlyWeatherAverage {
     averagePrecipitationIntensity: number;
     averageTemperature: number;
     averageWeatherCode: number;
+    chanceOfRain?: string;
   }
